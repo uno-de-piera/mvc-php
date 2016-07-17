@@ -20,7 +20,7 @@ class App
     private $_params = [];
 
     /**
-     * [$config description]
+     * [$Config description]
      * @var [type]
      */
     public $config = [];
@@ -33,7 +33,7 @@ class App
     /**
      * @var
      */
-    const CONTROLLERS_PATH = "../App/controllers/";
+    const CONTROLLERS_PATH = "../App/Controllers/";
 
     /**
      * [__construct description]
@@ -43,7 +43,7 @@ class App
         //obtenemos la url parseada
         $url = $this->parseUrl();
 
-        //comprobamos que exista el archivo en el directorio controllers
+        //comprobamos que exista el archivo en el directorio Controllers
         if(file_exists(self::CONTROLLERS_PATH.ucfirst($url[0]) . ".php"))
         {
             //nombre del archivo a llamar
@@ -53,7 +53,7 @@ class App
         }
         else
         {
-            include APPPATH . "/views/errors/404.php";
+            include APPPATH . "/Views/errors/404.php";
             exit;
         }
 
@@ -105,11 +105,11 @@ class App
 
     /**
      * [getConfig Obtenemos la configuración de la app]
-     * @return [Array] [Array con la config]
+     * @return [Array] [Array con la Config]
      */
     public static function getConfig()
     {
-        return parse_ini_file(APPPATH . '/config/config.ini');
+        return parse_ini_file(APPPATH . '/Config/Config.ini');
     }
 
     /**

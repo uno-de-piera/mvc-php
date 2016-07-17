@@ -12,7 +12,7 @@ class View
     /**
      * @var
      */
-    const VIEWS_PATH = "../App/views/";
+    const VIEWS_PATH = "../App/Views/";
 
     /**
      * @var
@@ -20,7 +20,7 @@ class View
     const EXTENSION_TEMPLATES = "php";
 
     /**
-     * [render views with data]
+     * [render Views with data]
      * @param  [String]  [template name]
      * @return [html]    [render html]
      */
@@ -40,7 +40,7 @@ class View
     }
 
     /**
-     * [set Set Data form views]
+     * [set Set Data form Views]
      * @param [string] $name  [key]
      * @param [mixed] $value [value]
      */

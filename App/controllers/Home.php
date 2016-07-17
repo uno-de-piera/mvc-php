@@ -11,7 +11,8 @@ class Home extends Controller
 
     public function index()
     {
-
+        View::set("msg", "Hello World!!");
+        View::render("home/index");
     }
 
     /**

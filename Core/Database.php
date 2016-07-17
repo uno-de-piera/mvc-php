@@ -58,7 +58,7 @@ class Database
     private function __construct()
     {
        try {
-		   //load from config/config.ini
+		   //load from Config/Config.ini
 		   $config = App::getConfig();
 		   $this->_dbHost = $config["host"];
 		   $this->_dbUser = $config["user"];
