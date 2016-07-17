@@ -1,0 +1,13 @@
+{
+  "require": {
+    "php-di/php-di": "^5.3",
+    "aura/session": "^2.0",
+    "doctrine/orm": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "App",
+      "Core\\":"Core"
+    }
+  }
+}
